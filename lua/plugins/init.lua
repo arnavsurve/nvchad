@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     config = function()
       require "configs.conform"
     end,
@@ -49,11 +49,37 @@ return {
     },
   },
 
+  -- markdown preview
+  -- install with yarn or npm
   {
-      'tpope/vim-sleuth',
-      config = function()
-          vim.g.sleuth_automatic = 1
-      end,
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
+
+  {
+    "norcalli/nvim-colorizer.lua",
+    config = function()
+      require("colorizer").setup {
+        "html",
+        "css",
+        "scss",
+        "javascript",
+        "svelte",
+      }
+    end,
+  },
+
+  -- autodetect file indent prefs
+  {
+    "tpope/vim-sleuth",
+    config = function()
+      vim.g.sleuth_automatic = 1
+    end,
   },
 
   {
@@ -63,8 +89,6 @@ return {
 
   {
     "github/copilot.vim",
-    config = function()
-    end,
+    config = function() end,
   },
-
 }
