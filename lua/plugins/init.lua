@@ -60,6 +60,20 @@ return {
     ft = { "markdown" },
   },
 
+  {
+    "lervag/vimtex",
+    init = function()
+      -- put vim.g.vimtex_* settings here
+      vim.g.vimtex_view_method = "skim"
+      vim.g.vimtex_syntax_enabled = 0
+    end,
+    ft = { "tex" },
+  },
+
+  -- {
+  --   "kylechui/nvim-surround",
+  -- },
+
   -- {
   --   "norcalli/nvim-colorizer.lua",
   --   config = function()
@@ -72,6 +86,15 @@ return {
   --     }
   --   end,
   -- },
+  --
+  -- {
+  --   "github/copilot.vim",
+  --   lazy = false,
+  --   config = function() -- Mapping tab is already used by NvChad
+  --     -- The mapping is set to other key, see custom/lua/mappings
+  --     -- or run <leader>ch to see copilot mapping section
+  --   end,
+  -- },
 
   -- autodetect file indent prefs
   -- {
@@ -80,6 +103,10 @@ return {
   --     vim.g.sleuth_automatic = 1
   --   end,
   -- },
+
+  {
+    "xiyaowong/transparent.nvim",
+  },
 
   {
     "evanleck/vim-svelte",
