@@ -5,8 +5,8 @@
 local M = {}
 
 M.ui = {
-  theme = "nightlamp",
-  toggle_theme = { "nightlamp", "rosepine-dawn" },
+  theme = "mountain",
+  toggle_theme = { "mountain", "rosepine-dawn" },
 
   hl_override = {
     Comment = { italic = true },
