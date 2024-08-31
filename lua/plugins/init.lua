@@ -107,10 +107,6 @@ return {
   -- },
 
   {
-    "xiyaowong/transparent.nvim",
-  },
-
-  {
     "evanleck/vim-svelte",
     lazy = true,
   },

@@ -7,6 +7,7 @@ local M = {}
 M.ui = {
   theme = "mountain",
   toggle_theme = { "mountain", "rosepine-dawn" },
+  transparency = true,
 
   hl_override = {
     Comment = { italic = true },
