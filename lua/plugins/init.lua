@@ -88,23 +88,6 @@ return {
   --     }
   --   end,
   -- },
-  --
-  -- {
-  --   "github/copilot.vim",
-  --   lazy = false,
-  --   config = function() -- Mapping tab is already used by NvChad
-  --     -- The mapping is set to other key, see custom/lua/mappings
-  --     -- or run <leader>ch to see copilot mapping section
-  --   end,
-  -- },
-
-  -- autodetect file indent prefs
-  -- {
-  --   "tpope/vim-sleuth",
-  --   config = function()
-  --     vim.g.sleuth_automatic = 1
-  --   end,
-  -- },
 
   {
     "evanleck/vim-svelte",

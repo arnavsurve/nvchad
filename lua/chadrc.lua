@@ -6,7 +6,7 @@ local M = {}
 
 M.ui = {
   theme = "ashes",
-  toggle_theme = { "mountain", "rosepine-dawn" },
+  toggle_theme = { "ashes", "rosepine-dawn" },
   transparency = true,
 
   hl_override = {
