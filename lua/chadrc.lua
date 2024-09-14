@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-  theme = "mountain",
+  theme = "ashes",
   toggle_theme = { "mountain", "rosepine-dawn" },
   transparency = true,
 
